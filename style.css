@@ -973,6 +973,99 @@ h1 a:hover {
     object-fit: contain;
 }
 
+/* AINSI THE case study media scale */
+.ainsithe-page {
+    --case-red: #5d9a83;
+    --case-red-dark: #42292a;
+    --case-navy: #42292a;
+    --case-surface: #f6f7f3;
+    --ainsithe-page-width: min(100% - clamp(48px, 7vw, 112px), 1240px);
+    --ainsithe-copy-width: min(100% - clamp(48px, 7vw, 112px), 760px);
+    --ainsithe-text-width: 560px;
+}
+
+.ainsithe-page .case-hero {
+    height: clamp(430px, 46vw, 665px);
+    min-height: 430px;
+}
+
+.ainsithe-page .case-hero img {
+    height: 100%;
+    max-height: 665px;
+    object-fit: contain;
+    object-position: right bottom;
+}
+
+.ainsithe-page .case-intro,
+.ainsithe-page .case-meta-grid,
+.ainsithe-page .case-copy-block,
+.ainsithe-page .related-projects {
+    width: var(--ainsithe-page-width);
+}
+
+.ainsithe-page .case-intro {
+    padding: clamp(52px, 6vw, 86px) 0 34px;
+}
+
+.ainsithe-page .case-intro p {
+    max-width: 760px;
+}
+
+.ainsithe-page .case-meta-grid {
+    width: var(--ainsithe-copy-width);
+    max-width: 760px;
+    margin-inline: auto;
+    gap: 34px clamp(36px, 5vw, 72px);
+    padding: 24px 0 clamp(64px, 7vw, 94px);
+}
+
+.ainsithe-page .case-reference-stack,
+.ainsithe-page .case-copy-narrow {
+    grid-template-columns: minmax(0, var(--ainsithe-text-width));
+    justify-content: end;
+}
+
+.ainsithe-page .case-reference-stack {
+    gap: clamp(54px, 7vw, 112px);
+}
+
+.ainsithe-page .case-copy-block a {
+    color: var(--case-red);
+    transition: color 160ms ease;
+}
+
+.ainsithe-page .case-copy-block a:hover,
+.ainsithe-page .case-copy-block a:focus-visible {
+    color: var(--case-red-dark);
+}
+
+.ainsithe-wide-media,
+.ainsithe-tall-media {
+    width: var(--ainsithe-page-width);
+}
+
+.ainsithe-wide-media + .ainsithe-wide-media,
+.ainsithe-wide-media + .ainsithe-tall-media,
+.ainsithe-tall-media + .ainsithe-wide-media {
+    margin-top: clamp(24px, 3vw, 40px);
+}
+
+.ainsithe-wide-media img,
+.ainsithe-tall-media img {
+    width: 100%;
+    max-height: none;
+    object-fit: contain;
+}
+
+.ainsithe-tall-media {
+    background: #f9f9f7;
+}
+
+.ainsithe-tall-media img {
+    max-width: 1040px;
+    margin-inline: auto;
+}
+
 /* Sortafy case study media scale */
 .sortafy-page {
     --sortafy-content-width: min(100% - 88px, 980px);
@@ -1289,6 +1382,35 @@ h1 a:hover {
         min-height: auto;
     }
 
+    .ainsithe-page {
+        --ainsithe-page-width: min(100% - 40px, 760px);
+        --ainsithe-copy-width: min(100% - 40px, 760px);
+        --ainsithe-text-width: 100%;
+    }
+
+    .ainsithe-page .case-hero {
+        height: auto;
+        min-height: 420px;
+    }
+
+    .ainsithe-page .case-hero img {
+        max-height: 420px;
+    }
+
+    .ainsithe-page .case-intro,
+    .ainsithe-page .case-meta-grid,
+    .ainsithe-page .case-copy-block,
+    .ainsithe-wide-media,
+    .ainsithe-tall-media,
+    .ainsithe-page .related-projects {
+        width: var(--ainsithe-page-width);
+    }
+
+    .ainsithe-page .case-reference-stack,
+    .ainsithe-page .case-copy-narrow {
+        justify-content: start;
+    }
+
     .case-carousel {
         padding: 54px 0 42px;
     }
@@ -1403,6 +1525,38 @@ h1 a:hover {
 
     .case-hero {
         min-height: 320px;
+    }
+
+    .ainsithe-page {
+        --ainsithe-page-width: calc(100% - 32px);
+        --ainsithe-copy-width: calc(100% - 32px);
+    }
+
+    .ainsithe-page .case-hero {
+        min-height: 280px;
+    }
+
+    .ainsithe-page .case-hero img {
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .ainsithe-page .case-intro,
+    .ainsithe-page .case-meta-grid,
+    .ainsithe-page .case-copy-block,
+    .ainsithe-wide-media,
+    .ainsithe-tall-media,
+    .ainsithe-page .related-projects {
+        width: var(--ainsithe-page-width);
+    }
+
+    .ainsithe-page .case-intro {
+        padding-top: 42px;
+    }
+
+    .ainsithe-page .case-meta-grid {
+        padding-bottom: 42px;
     }
 
     .case-intro p {
