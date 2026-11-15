@@ -16,18 +16,18 @@
 
 - [x] Complete all six case studies using the live copy, project imagery, and demo links. Retain the root, About, and case-study routes and add redirects for the old HTML URLs.
 - [x] Keep the unlinked test page and empty photography route reachable. Exclude both from indexing and navigation. Correct the sitemap to include Prudential.
-- [x] Bundle optimized WebP images and IBM Plex font files. Generate the site from local files with no network calls.
-- [x] Support keyboard access, focus outlines, skip navigation, card insights on pointer and keyboard, and reduced motion. Darken muted copy for readability. Use the Vimeo player's accessible controls and user-initiated playback.
+- [x] Bundle original-resolution Framer images, self-hosted demo MP4s, and IBM Plex font files. Generate the site from local files.
+- [x] Support keyboard access, focus outlines, skip navigation, card insights on pointer and keyboard, and reduced motion. Darken muted copy for readability. Use labeled native video controls and user-initiated playback.
 
 ## 4. QA and optimization
 
 - [x] Production build generated 10 routes. Static verification checked 9 aliases and 430 local references across root and GitHub Pages project URL prefixes. This includes assets, fragments, canonical URLs, image dimensions, and the sitemap.
 - [x] Compared rendered route screenshots against the live site in Chromium, with a 1348 px desktop viewport and 390 px, 810 px, and 1440 px comparison frames. Refined home spacing, work-card sizes, and case-study heroes after review. The 30 final responsive route checks found no horizontal overflow or failed loaded images.
 - [x] Checked Work anchor navigation, legacy redirect, keyboard skip and focus transfer, Sortafy card disclosure, arrow-key navigation, pagination, and wraparound in Chromium. Confirmed the Prudential Vimeo player loaded.
-- [ ] Full visual equivalence is pending. Some case-study section spacing, crops, responsive content variants, and Framer entrance motion differ. Layout measurements are browser checks, with cross-browser, formal accessibility, and Lighthouse audits still pending. Vimeo playback across all demos has yet to be verified.
+- [ ] Full visual equivalence is pending. Some case-study section spacing, crops, responsive content variants, and Framer entrance motion differ. Layout measurements are browser checks, with cross-browser, formal accessibility, and Lighthouse audits still pending.
 
 ## 5. Deploy
 
 - [x] Add a GitHub Actions workflow for build, checks, and GitHub Pages deployment. Document certificate, DNS cutover, and rollback in the README.
-- [ ] Push and open a pull request. The connected GitHub integration returned HTTP 403 when creating a branch and uploading assets. Direct Git push also required credentials unavailable to this environment.
+- [x] Push the migration branch and open pull request #1.
 - [ ] Verify the deployed GitHub Pages URL, HTTPS certificate, custom domain, and SEO on the deployed host. Complete these checks before disconnecting Framer.

@@ -264,7 +264,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
 }
 .pca-page .case-prototype { --demo-ratio: 810 / 402; }
 .links-page .case-prototype { --demo-ratio: 811 / 573; }
-.case-prototype iframe { display: block; width: 100%; height: 100%; border: 0; }
+.case-prototype video { display: block; width: 100%; height: 100%; }
 
 .case-carousel {
   margin-block: var(--space-3);

@@ -1,6 +1,6 @@
 # Emily Hsieh · Portfolio
 
-Static portfolio source for [emilyhs1eh.com](https://www.emilyhs1eh.com/). The build uses Node.js 22 and has no package dependencies. Images and IBM Plex fonts are included with the source. The existing Vimeo players and external prototype links continue to use their original providers.
+Static portfolio source for [emilyhs1eh.com](https://www.emilyhs1eh.com/). The build uses Node.js 22 and has no package dependencies. Framer images, project demo videos, and IBM Plex fonts are included with the source. Case-study videos play directly from local MP4 files.
 
 ## Develop and validate
 
@@ -16,7 +16,7 @@ The preview defaults to `http://127.0.0.1:4173/`. Build output is written to `di
 - `content/*.html` contains page and case-study copy in semantic HTML.
 - `scripts/components.mjs` renders the common document, navigation, contact footer, project cards, and related-work sections.
 - `style.css` defines the color, type, spacing, size, and motion tokens. Layouts switch at 810 px and 1440 px. Case studies share introductory copy, metadata, article, figure, and video patterns.
-- `media/` contains optimized WebP images and self-hosted IBM Plex fonts. The font license is bundled there.
+- `media/` contains original-resolution Framer images, project demo MP4s, and self-hosted IBM Plex fonts. The font license is bundled there.
 - `interactions.js` enables Sortafy carousel controls and keyboard navigation. The cards can also be expanded without JavaScript.
 
 ## Publish with GitHub Pages
