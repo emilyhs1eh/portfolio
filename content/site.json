@@ -1,0 +1,150 @@
+{
+  "home": {
+    "title": "emilyhsieh ⸺ portfolio",
+    "description": "Emily Hsieh is a product & user experience designer based in New York City, who combines inclusivity, simplicity, and strategic marketing to create digital products that enhance everyday experiences.",
+    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.webp"
+  },
+  "about": {
+    "title": "emilyhsieh ⸺ about",
+    "description": "emilyhsieh — designer © 2024",
+    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.webp"
+  },
+  "gallery/photography": {
+    "title": "emilyhsieh — portfolio",
+    "description": "emilyhsieh — designer © 2024",
+    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.webp"
+  },
+  "test": {
+    "title": "AINSI THÉ",
+    "description": "emilyhsieh — designer © 2024",
+    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.webp",
+    "related": [
+      "pca",
+      "taishin",
+      "ainsithe"
+    ]
+  },
+  "projects": {
+    "pca": {
+      "title": "PCA",
+      "description": "emilyhsieh — designer © 2024",
+      "image": "media/f4tvRvmqSovokUwLNelgB0F5M.webp",
+      "related": [
+        "sortafy",
+        "taishin",
+        "ainsithe"
+      ],
+      "name": "Prudential Corporation Asia",
+      "subtitle": "Designing for Assurance and Accessibility",
+      "year": "2020",
+      "category": "Design System",
+      "card": {
+        "src": "media/6o90dpbpbnTXOkqYlMCf0st4qdA.webp",
+        "width": 4776,
+        "height": 2157,
+        "alt": "Prudential life insurance site shown on a desktop"
+      }
+    },
+    "sortafy": {
+      "title": "SORTAFY",
+      "description": "emilyhsieh — designer © 2024",
+      "image": "media/m3tyOfB3jYnxQXOATZ4IcrHm38.webp",
+      "related": [
+        "pca",
+        "taishin",
+        "ainsithe"
+      ],
+      "name": "Sortafy",
+      "subtitle": "AI-Powered Photo Management App",
+      "year": "2024",
+      "category": "App - Product Design",
+      "card": {
+        "src": "media/NLEz3K7TKzcvpvJJrAXG8AY7y7Y.webp",
+        "width": 4587,
+        "height": 2157,
+        "alt": "Sortafy photo-management app on mobile"
+      }
+    },
+    "taishin": {
+      "title": "Taishin Bank Charity Foundation",
+      "description": "emilyhsieh — designer © 2024",
+      "image": "media/lXG9uDS5tVO6BVfvIrOf0Et3y4.webp",
+      "related": [
+        "pca",
+        "sortafy",
+        "ainsithe"
+      ],
+      "name": "Taishin Bank Charity Foundation",
+      "subtitle": "Empowering Non-Profit Communities through Design",
+      "year": "2019",
+      "category": "Web Design",
+      "card": {
+        "src": "media/hE8WjAs0T9F2Ui8e5BUNRbcDEgs.webp",
+        "width": 3186,
+        "height": 1439,
+        "alt": "Taishin Bank Charity Foundation site shown on a desktop"
+      }
+    },
+    "ainsithe": {
+      "title": "AINSI THÉ",
+      "description": "emilyhsieh — designer © 2024",
+      "image": "media/vA2MiblYD85UKjMb0lg0x8EVrk.webp",
+      "related": [
+        "pca",
+        "sortafy",
+        "taishin"
+      ],
+      "name": "AINSI THÉ",
+      "subtitle": "Brewing Traditional Tea into E-Commerce",
+      "year": "2021",
+      "category": "Web Design",
+      "card": {
+        "src": "media/zi4eQVBzAsSA9wiqTQ2aXTgXHoI.webp",
+        "width": 2508,
+        "height": 1439,
+        "alt": "AINSI THÉ online tea shop shown on desktop and mobile"
+      }
+    },
+    "links": {
+      "title": "Links",
+      "description": "emilyhsieh — designer © 2024",
+      "image": "media/0Tfg2466r0gyRQX5XJiGMT6yCq0.webp",
+      "related": [
+        "pca",
+        "sortafy",
+        "taishin"
+      ],
+      "name": "Links",
+      "subtitle": "Dynamic Content through Are.na API Integration",
+      "year": "2023",
+      "category": "Web Design, Html/CSS, Javascript",
+      "card": {
+        "src": "media/yLpyfqfIakeGOKhLIFpoFrLfXM.webp",
+        "width": 3186,
+        "height": 1439,
+        "alt": "Links collection on overlapping browser windows"
+      }
+    },
+    "data": {
+      "title": "Data Visualization",
+      "description": "emilyhsieh — designer © 2024",
+      "image": "media/yJTxCFtknl4iWVdQvtvfb225DY.webp",
+      "related": [
+        "pca",
+        "sortafy",
+        "taishin"
+      ],
+      "name": "Data Visualization",
+      "subtitle": "Visualizing Textual Data of Country Mentions",
+      "year": "2024",
+      "category": "D3.js",
+      "card": {
+        "src": "media/xFVN49gqziM5fJNlJ7jJvcGjhl8.webp",
+        "width": 3186,
+        "height": 1439,
+        "alt": "Colorful pie chart showing mentions of countries"
+      }
+    }
+  },
+  "icon": "media/x73vmnnSa6SOLayRnKdxe1CXhU.webp"
+}
