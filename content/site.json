@@ -2,22 +2,22 @@
   "home": {
     "title": "emilyhsieh ⸺ portfolio",
     "description": "Emily Hsieh is a product & user experience designer based in New York City, who combines inclusivity, simplicity, and strategic marketing to create digital products that enhance everyday experiences.",
-    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.webp"
+    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.png"
   },
   "about": {
     "title": "emilyhsieh ⸺ about",
     "description": "emilyhsieh — designer © 2024",
-    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.webp"
+    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.png"
   },
   "gallery/photography": {
     "title": "emilyhsieh — portfolio",
     "description": "emilyhsieh — designer © 2024",
-    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.webp"
+    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.png"
   },
   "test": {
     "title": "AINSI THÉ",
     "description": "emilyhsieh — designer © 2024",
-    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.webp",
+    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.png",
     "related": [
       "pca",
       "taishin",
@@ -28,7 +28,7 @@
     "pca": {
       "title": "PCA",
       "description": "emilyhsieh — designer © 2024",
-      "image": "media/f4tvRvmqSovokUwLNelgB0F5M.webp",
+      "image": "media/f4tvRvmqSovokUwLNelgB0F5M.png",
       "related": [
         "sortafy",
         "taishin",
@@ -39,7 +39,7 @@
       "year": "2020",
       "category": "Design System",
       "card": {
-        "src": "media/6o90dpbpbnTXOkqYlMCf0st4qdA.webp",
+        "src": "media/6o90dpbpbnTXOkqYlMCf0st4qdA.png",
         "width": 4776,
         "height": 2157,
         "alt": "Prudential life insurance site shown on a desktop"
@@ -48,7 +48,7 @@
     "sortafy": {
       "title": "SORTAFY",
       "description": "emilyhsieh — designer © 2024",
-      "image": "media/m3tyOfB3jYnxQXOATZ4IcrHm38.webp",
+      "image": "media/m3tyOfB3jYnxQXOATZ4IcrHm38.png",
       "related": [
         "pca",
         "taishin",
@@ -59,7 +59,7 @@
       "year": "2024",
       "category": "App - Product Design",
       "card": {
-        "src": "media/NLEz3K7TKzcvpvJJrAXG8AY7y7Y.webp",
+        "src": "media/NLEz3K7TKzcvpvJJrAXG8AY7y7Y.png",
         "width": 4587,
         "height": 2157,
         "alt": "Sortafy photo-management app on mobile"
@@ -68,7 +68,7 @@
     "taishin": {
       "title": "Taishin Bank Charity Foundation",
       "description": "emilyhsieh — designer © 2024",
-      "image": "media/lXG9uDS5tVO6BVfvIrOf0Et3y4.webp",
+      "image": "media/lXG9uDS5tVO6BVfvIrOf0Et3y4.png",
       "related": [
         "pca",
         "sortafy",
@@ -79,7 +79,7 @@
       "year": "2019",
       "category": "Web Design",
       "card": {
-        "src": "media/hE8WjAs0T9F2Ui8e5BUNRbcDEgs.webp",
+        "src": "media/hE8WjAs0T9F2Ui8e5BUNRbcDEgs.png",
         "width": 3186,
         "height": 1439,
         "alt": "Taishin Bank Charity Foundation site shown on a desktop"
@@ -88,7 +88,7 @@
     "ainsithe": {
       "title": "AINSI THÉ",
       "description": "emilyhsieh — designer © 2024",
-      "image": "media/vA2MiblYD85UKjMb0lg0x8EVrk.webp",
+      "image": "media/vA2MiblYD85UKjMb0lg0x8EVrk.png",
       "related": [
         "pca",
         "sortafy",
@@ -99,7 +99,7 @@
       "year": "2021",
       "category": "Web Design",
       "card": {
-        "src": "media/zi4eQVBzAsSA9wiqTQ2aXTgXHoI.webp",
+        "src": "media/zi4eQVBzAsSA9wiqTQ2aXTgXHoI.png",
         "width": 2508,
         "height": 1439,
         "alt": "AINSI THÉ online tea shop shown on desktop and mobile"
@@ -108,7 +108,7 @@
     "links": {
       "title": "Links",
       "description": "emilyhsieh — designer © 2024",
-      "image": "media/0Tfg2466r0gyRQX5XJiGMT6yCq0.webp",
+      "image": "media/0Tfg2466r0gyRQX5XJiGMT6yCq0.png",
       "related": [
         "pca",
         "sortafy",
@@ -119,7 +119,7 @@
       "year": "2023",
       "category": "Web Design, Html/CSS, Javascript",
       "card": {
-        "src": "media/yLpyfqfIakeGOKhLIFpoFrLfXM.webp",
+        "src": "media/yLpyfqfIakeGOKhLIFpoFrLfXM.png",
         "width": 3186,
         "height": 1439,
         "alt": "Links collection on overlapping browser windows"
@@ -128,7 +128,7 @@
     "data": {
       "title": "Data Visualization",
       "description": "emilyhsieh — designer © 2024",
-      "image": "media/yJTxCFtknl4iWVdQvtvfb225DY.webp",
+      "image": "media/yJTxCFtknl4iWVdQvtvfb225DY.png",
       "related": [
         "pca",
         "sortafy",
@@ -139,12 +139,12 @@
       "year": "2024",
       "category": "D3.js",
       "card": {
-        "src": "media/xFVN49gqziM5fJNlJ7jJvcGjhl8.webp",
+        "src": "media/xFVN49gqziM5fJNlJ7jJvcGjhl8.png",
         "width": 3186,
         "height": 1439,
         "alt": "Colorful pie chart showing mentions of countries"
       }
     }
   },
-  "icon": "media/x73vmnnSa6SOLayRnKdxe1CXhU.webp"
+  "icon": "media/x73vmnnSa6SOLayRnKdxe1CXhU.png"
 }

@@ -73,7 +73,7 @@ export function page({ site, route, root, meta, canonical, body, pageClass, noin
   <meta property="og:description" content="${description}">
   <meta property="og:image" content="${new URL(socialImage, canonical.origin)}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="${root}${site.icon}" type="image/webp">
+  <link rel="icon" href="${root}${site.icon}">
   <link rel="stylesheet" href="${root}fonts.css">
   <link rel="stylesheet" href="${root}style.css">
   ${empty ? '' : `<script src="${root}interactions.js" type="module"></script>`}
