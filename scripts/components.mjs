@@ -30,7 +30,7 @@ const contact = `<footer class="footer" id="contact">
 </footer>`;
 
 export function projectCard(slug, project, root, eager) {
-  return `<a class="project-card" href="${root}design/${slug}/">
+  return `<a class="project-card ${slug}" href="${root}design/${slug}/">
   <span class="project-image">${image(project.card, root, eager, '')}</span>
   <span class="project-meta">
     <span><strong>${escape(project.name)}</strong><small>${escape(project.subtitle)}</small></span>
@@ -39,18 +39,22 @@ export function projectCard(slug, project, root, eager) {
 </a>`;
 }
 
-export function relatedProjects(slugs, projects, root) {
+export function relatedProjects(slugs, mobileSlugs, projects, root) {
+  const cards = (entries) => entries.map((slug) => {
+    const project = projects[slug];
+    const desktop = image(project.card, root, false, '');
+    const picture = project.card.relatedMobile
+      ? `<picture><source media="(max-width: 809.98px)" srcset="${root}${project.card.relatedMobile}">${desktop}</picture>`
+      : desktop;
+    return `<a class="${slug}" href="${root}design/${slug}/">${picture}<span class="visually-hidden">${escape(project.name)}</span></a>`;
+  }).join('\n    ');
   return `<section class="related-projects" aria-labelledby="related-title">
   <div class="related-heading">
     <h2 id="related-title">RELATED PROJECTS</h2>
-    <a href="${root}#works">ALL WORKS <span aria-hidden="true">↗</span></a>
+    <a href="${root}#works">ALL PROJECTS <span aria-hidden="true">↗</span></a>
   </div>
-  <div class="related-grid">
-    ${slugs.map((slug) => {
-      const project = projects[slug];
-      return `<a href="${root}design/${slug}/">${image(project.card, root, false, '')}<span class="visually-hidden">${escape(project.name)}</span></a>`;
-    }).join('\n    ')}
-  </div>
+  <div class="related-grid${mobileSlugs ? ' related-grid-desktop' : ''}">${cards(slugs)}</div>
+  ${mobileSlugs ? `<div class="related-grid related-grid-mobile">${cards(mobileSlugs)}</div>` : ''}
 </section>`;
 }
 

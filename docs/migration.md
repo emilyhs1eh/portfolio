@@ -21,10 +21,11 @@
 
 ## 4. QA and optimization
 
-- [x] Production build generated 10 routes. Static verification checked 9 aliases and 430 local references across root and GitHub Pages project URL prefixes. This includes assets, fragments, canonical URLs, image dimensions, and the sitemap.
+- [x] Production build generated 10 routes. Static verification checked 9 aliases and 564 local references across root and GitHub Pages project URL prefixes. This includes assets, fragments, canonical URLs, image dimensions, and the sitemap.
 - [x] Compared rendered route screenshots against the live site in Chromium, with a 1348 px desktop viewport and 390 px, 810 px, and 1440 px comparison frames. Refined home spacing, work-card sizes, and case-study heroes after review. The 30 final responsive route checks found no horizontal overflow or failed loaded images.
-- [x] Checked Work anchor navigation, legacy redirect, keyboard skip and focus transfer, Sortafy card disclosure, arrow-key navigation, pagination, and wraparound in Chromium. Confirmed the Prudential Vimeo player loaded.
-- [ ] Full visual equivalence is pending. Some case-study section spacing, crops, responsive content variants, and Framer entrance motion differ. Layout measurements are browser checks, with cross-browser, formal accessibility, and Lighthouse audits still pending.
+- [x] Checked Work anchor navigation, legacy redirect, keyboard skip and focus transfer, Sortafy card disclosure, arrow-key navigation, pagination, and wraparound in Chromium. Case-study demos now use self-hosted MP4 files.
+- [x] Compared all ten routes with their Framer counterparts at 390 px, 810 px, 1363 px, 1440 px, and 1728 px in Chromium. Restored breakpoint-specific image variants, media panel colors, the About layout, and the right-hand text column on wide case studies.
+- [ ] Some section spacing, carousel and video controls, and entrance effects still differ from Framer. Cross-browser, formal accessibility, and Lighthouse audits remain pending.
 
 ## 5. Deploy
 

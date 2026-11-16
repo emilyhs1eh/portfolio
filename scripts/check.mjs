@@ -33,7 +33,11 @@ for (const route of routes) {
   }
   for (const buildRoot of buildRoots) {
     const url = new URL(buildRoot + (route ? route + '/' : ''), 'https://preview.example');
-    for (const [, address] of markup.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
+    const addresses = [...markup.matchAll(/\b(?:href|src)="([^"]+)"/g)].map(([, address]) => address);
+    for (const [, srcset] of markup.matchAll(/\bsrcset="([^"]+)"/g)) {
+      addresses.push(...srcset.split(',').map((candidate) => candidate.trim().split(/\s+/)[0]));
+    }
+    for (const address of addresses) {
       const link = new URL(address, url);
       if (link.origin !== url.origin) continue;
       assert(link.pathname.startsWith(buildRoot), `Link escapes the site from ${url.pathname}: ${address}`);

@@ -21,7 +21,7 @@
     "related": [
       "pca",
       "taishin",
-      "ainsithe"
+      "links"
     ]
   },
   "projects": {
@@ -30,9 +30,9 @@
       "description": "emilyhsieh — designer © 2024",
       "image": "media/f4tvRvmqSovokUwLNelgB0F5M.png",
       "related": [
+        "ainsithe",
         "sortafy",
-        "taishin",
-        "ainsithe"
+        "taishin"
       ],
       "name": "Prudential Corporation Asia",
       "subtitle": "Designing for Assurance and Accessibility",
@@ -43,7 +43,12 @@
         "width": 4776,
         "height": 2157,
         "alt": "Prudential life insurance site shown on a desktop"
-      }
+      },
+      "relatedMobile": [
+        "ainsithe",
+        "taishin",
+        "sortafy"
+      ]
     },
     "sortafy": {
       "title": "SORTAFY",
@@ -52,7 +57,7 @@
       "related": [
         "pca",
         "taishin",
-        "ainsithe"
+        "links"
       ],
       "name": "Sortafy",
       "subtitle": "AI-Powered Photo Management App",
@@ -62,7 +67,8 @@
         "src": "media/NLEz3K7TKzcvpvJJrAXG8AY7y7Y.png",
         "width": 4587,
         "height": 2157,
-        "alt": "Sortafy photo-management app on mobile"
+        "alt": "Sortafy photo-management app on mobile",
+        "relatedMobile": "media/m3tyOfB3jYnxQXOATZ4IcrHm38.png"
       }
     },
     "taishin": {
@@ -70,9 +76,9 @@
       "description": "emilyhsieh — designer © 2024",
       "image": "media/lXG9uDS5tVO6BVfvIrOf0Et3y4.png",
       "related": [
-        "pca",
+        "ainsithe",
         "sortafy",
-        "ainsithe"
+        "pca"
       ],
       "name": "Taishin Bank Charity Foundation",
       "subtitle": "Empowering Non-Profit Communities through Design",
@@ -82,7 +88,8 @@
         "src": "media/hE8WjAs0T9F2Ui8e5BUNRbcDEgs.png",
         "width": 3186,
         "height": 1439,
-        "alt": "Taishin Bank Charity Foundation site shown on a desktop"
+        "alt": "Taishin Bank Charity Foundation site shown on a desktop",
+        "relatedMobile": "media/OWUWtPR2WYMBwhYa05s9P2dHY.png"
       }
     },
     "ainsithe": {
@@ -90,9 +97,9 @@
       "description": "emilyhsieh — designer © 2024",
       "image": "media/vA2MiblYD85UKjMb0lg0x8EVrk.png",
       "related": [
-        "pca",
+        "taishin",
         "sortafy",
-        "taishin"
+        "pca"
       ],
       "name": "AINSI THÉ",
       "subtitle": "Brewing Traditional Tea into E-Commerce",
@@ -102,7 +109,8 @@
         "src": "media/zi4eQVBzAsSA9wiqTQ2aXTgXHoI.png",
         "width": 2508,
         "height": 1439,
-        "alt": "AINSI THÉ online tea shop shown on desktop and mobile"
+        "alt": "AINSI THÉ online tea shop shown on desktop and mobile",
+        "relatedMobile": "media/aNcYSMRLc5ty4NWEyEBzE05GHks.png"
       }
     },
     "links": {
@@ -110,9 +118,9 @@
       "description": "emilyhsieh — designer © 2024",
       "image": "media/0Tfg2466r0gyRQX5XJiGMT6yCq0.png",
       "related": [
-        "pca",
-        "sortafy",
-        "taishin"
+        "data",
+        "taishin",
+        "ainsithe"
       ],
       "name": "Links",
       "subtitle": "Dynamic Content through Are.na API Integration",
@@ -122,7 +130,8 @@
         "src": "media/yLpyfqfIakeGOKhLIFpoFrLfXM.png",
         "width": 3186,
         "height": 1439,
-        "alt": "Links collection on overlapping browser windows"
+        "alt": "Links collection on overlapping browser windows",
+        "relatedMobile": "media/0Tfg2466r0gyRQX5XJiGMT6yCq0.png"
       }
     },
     "data": {
@@ -130,9 +139,9 @@
       "description": "emilyhsieh — designer © 2024",
       "image": "media/yJTxCFtknl4iWVdQvtvfb225DY.png",
       "related": [
-        "pca",
-        "sortafy",
-        "taishin"
+        "links",
+        "taishin",
+        "pca"
       ],
       "name": "Data Visualization",
       "subtitle": "Visualizing Textual Data of Country Mentions",
@@ -142,8 +151,14 @@
         "src": "media/xFVN49gqziM5fJNlJ7jJvcGjhl8.png",
         "width": 3186,
         "height": 1439,
-        "alt": "Colorful pie chart showing mentions of countries"
-      }
+        "alt": "Colorful pie chart showing mentions of countries",
+        "relatedMobile": "media/Lhec1V40UhnyugTgAHT22nIJZ7U.png"
+      },
+      "relatedMobile": [
+        "links",
+        "taishin",
+        "ainsithe"
+      ]
     }
   },
   "icon": "media/x73vmnnSa6SOLayRnKdxe1CXhU.png"

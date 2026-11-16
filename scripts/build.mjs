@@ -34,7 +34,7 @@ for (const entry of routes) {
   const fragment = source ? await readFile(`content/${source}.html`, 'utf8') : '';
   const body = fragment
     .replace('{{projects}}', () => projects.map(([slug, project], index) => projectCard(slug, project, root, index === 0)).join('\n'))
-    .replace('{{related}}', () => relatedProjects(meta.related, site.projects, root))
+    .replace('{{related}}', () => relatedProjects(meta.related, meta.relatedMobile, site.projects, root))
     .replaceAll('{{root}}', root);
   if (/\{\{\w+\}\}/.test(body)) throw new Error(`Unresolved component in ${route || '/'}`);
   await write(join(route, 'index.html'), page({ ...entry, site, root, body, canonical: canonical(route) }));
