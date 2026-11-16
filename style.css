@@ -330,6 +330,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   aspect-ratio: var(--demo-ratio, 16 / 9);
   background: var(--surface);
 }
+.data-page .case-prototype { --demo-ratio: 2540 / 1440; background: transparent; }
 .pca-page .case-prototype { --demo-ratio: 810 / 402; }
 .links-page .case-prototype { --demo-ratio: 811 / 573; }
 .case-prototype video { object-fit: contain; }
