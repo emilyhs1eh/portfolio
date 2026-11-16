@@ -362,6 +362,56 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
 .carousel-insight { padding: var(--space-2); color: var(--ink); font-size: var(--font-small); }
 .carousel-insight h3 { margin-bottom: var(--space-1); font-size: var(--font-body); }
 .carousel-insight p + p { margin-top: var(--space-1); }
+/* Sortafy's original prototype and insights faces. */
+.sortafy-carousel .case-carousel-card {
+  position: relative;
+  border-radius: 20px;
+}
+.prototype-card {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+.prototype-front {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 2 / 3;
+  border-radius: inherit;
+}
+.prototype-front picture { display: block; height: 100%; }
+.prototype-front img { height: 100%; object-fit: cover; }
+.prototype-description { display: none; }
+.prototype-insights {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  background: #334268;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+.prototype-insights img { height: 100%; object-fit: cover; }
+.prototype-insights-copy { position: absolute; inset: 0; }
+.prototype-insights-copy h3 { color: #e5989b; font-size: 1.25rem; }
+.prototype-insights-copy ul { margin: 18px 0 0; padding-left: 1.3em; }
+.prototype-insights-copy li + li { margin-top: 0.65em; }
+.prototype-card[aria-expanded="true"] + .prototype-insights { visibility: visible; opacity: 1; }
+@media (hover: hover) and (pointer: fine) {
+  .prototype-card:hover + .prototype-insights { visibility: visible; opacity: 1; }
+}
+@media (max-width: 1439.98px) {
+  .prototype-insights-copy { width: 1px; height: 1px; clip-path: inset(50%); }
+}
+
 .case-carousel-controls, .case-carousel-dots { display: flex; justify-content: center; align-items: center; gap: var(--space-1); }
 .case-carousel-controls { margin-top: var(--space-2); }
 .case-carousel-controls button {
@@ -471,6 +521,29 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   .case-media-analytics .case-media-items { gap: 40px; }
   .case-carousel-track { --card-width: min(32vw, 430px); }
   .case-carousel-card summary img { aspect-ratio: 430 / 308; }
+  .sortafy-carousel .case-carousel-track { --card-width: 100%; max-width: 888px; margin-inline: auto; }
+  .prototype-front {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 56px;
+    padding: 32px 48px;
+    aspect-ratio: 888 / 352;
+  }
+  .prototype-front picture { height: auto; }
+  .prototype-front img { height: auto; object-fit: contain; }
+  .prototype-description { display: grid; gap: 24px; font-size: 0.875rem; }
+  .prototype-description span:first-child { color: var(--muted); font-size: 1rem; }
+  .prototype-description strong { font-size: 1.25rem; }
+  .prototype-insights img { display: none; }
+  .prototype-insights-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px 14.8%;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
   .related-grid a { aspect-ratio: 440 / 330; }
   .related-projects { padding-inline: 0; }
 }

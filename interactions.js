@@ -22,6 +22,11 @@ for (const carousel of document.querySelectorAll('[data-carousel]')) {
   }
 
   carousel.addEventListener('click', (event) => {
+    const insight = event.target.closest('[data-insight-toggle]');
+    if (insight) {
+      insight.setAttribute('aria-expanded', String(insight.getAttribute('aria-expanded') === 'false'));
+      return;
+    }
     const control = event.target.closest('[data-step], [data-slide]');
     if (!control) return;
     moveTo(control.hasAttribute('data-slide') ? Number(control.dataset.slide) : activeCard() + Number(control.dataset.step));
