@@ -91,7 +91,7 @@
   </div>
 </section>
 
-<section class="case-carousel sortafy-carousel" aria-label="Lo-fi prototypes" data-carousel>
+<section class="case-carousel sortafy-carousel" id="sortafy-prototypes" aria-label="Lo-fi prototypes" data-carousel>
   <div class="case-carousel-stage">
     <ul class="case-carousel-track" tabindex="0" aria-label="Prototype cards">
       <li class="case-carousel-card">
@@ -103,7 +103,7 @@
               <strong>Swipe - Based Photo Sorting</strong>
               <span>Organize photos easily on mobile. Swipe right for the next photo, swipe up to discard, or drag to an album to sort. Quickly build albums without tapping individual buttons for each action.</span>
             </span>
-            <picture><source media="(min-width: 1440px)" srcset="{{root}}media/TnDcgEPLUJ52f72kgeX6GQK7NA.png" width="1756" height="1156"><img src="{{root}}media/OqT81dzCrDIZonpUcnUPUAScTGA.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture>
+            <span class="prototype-art"><picture><source media="(min-width: 810px)" srcset="{{root}}media/TnDcgEPLUJ52f72kgeX6GQK7NA.png" width="1756" height="1156"><img src="{{root}}media/OqT81dzCrDIZonpUcnUPUAScTGA.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture><img class="prototype-stickers" src="{{root}}media/sortafy-prototype-1-stickers.svg" width="433" height="285" alt="" loading="lazy" decoding="async"></span>
           </span>
         </button>
         <div class="prototype-insights" id="prototype-insights-1">
@@ -127,7 +127,7 @@
               <strong>Smart Photo Sorter</strong>
               <span>This feature analyzes your photos for quality and lighting, suggesting which to keep, discard, or favorite. While the final decision is manual, AI Photo Helper offers valuable suggestions and a motivating progress bar.</span>
             </span>
-            <picture><source media="(min-width: 1440px)" srcset="{{root}}media/aUjvZQvqDxh2zJNPYNd9MDHY.png" width="1724" height="1236"><img src="{{root}}media/tKuyIWfMZx8XoTAZVbHEIv70iHQ.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture>
+            <span class="prototype-art"><picture><source media="(min-width: 810px)" srcset="{{root}}media/aUjvZQvqDxh2zJNPYNd9MDHY.png" width="1724" height="1236"><img src="{{root}}media/tKuyIWfMZx8XoTAZVbHEIv70iHQ.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture><img class="prototype-stickers" src="{{root}}media/sortafy-prototype-2-stickers.svg" width="430" height="309" alt="" loading="lazy" decoding="async"></span>
           </span>
         </button>
         <div class="prototype-insights" id="prototype-insights-2">
@@ -150,7 +150,7 @@
               <strong>Collaborate on Memories</strong>
               <span>Create Collaborative Albums, a shared space where friends and family can contribute, edit, and delete photos in real-time. Streamline the sorting process and enjoy a fun, social experience without endless email exchanges.</span>
             </span>
-            <picture><source media="(min-width: 1440px)" srcset="{{root}}media/X2leN3ZtRolF2plLIxisfGzxLmc.png" width="1712" height="1232"><img src="{{root}}media/gMRtSzmV0VTCFc398y6QzMG0Yq0.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture>
+            <span class="prototype-art"><picture><source media="(min-width: 810px)" srcset="{{root}}media/X2leN3ZtRolF2plLIxisfGzxLmc.png" width="1712" height="1232"><img src="{{root}}media/gMRtSzmV0VTCFc398y6QzMG0Yq0.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture><img class="prototype-stickers" src="{{root}}media/sortafy-prototype-3-stickers.svg" width="428" height="308" alt="" loading="lazy" decoding="async"></span>
           </span>
         </button>
         <div class="prototype-insights" id="prototype-insights-3">
@@ -173,7 +173,7 @@
               <strong>Similar Photo Detection</strong>
               <span>This feature automatically identifies photos with similar content and groups them together. Easily review the groups, choose the best shot, and delete the rest This feature helps you save storage space and streamline the album.</span>
             </span>
-            <picture><source media="(min-width: 1440px)" srcset="{{root}}media/4LbyfsK5tQScK4wKEXw13qwsrq8.png" width="1716" height="1224"><img src="{{root}}media/PxitSfejNR5GXwRnDMWJiyYKUY.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture>
+            <span class="prototype-art"><picture><source media="(min-width: 810px)" srcset="{{root}}media/4LbyfsK5tQScK4wKEXw13qwsrq8.png" width="1716" height="1224"><img src="{{root}}media/PxitSfejNR5GXwRnDMWJiyYKUY.png" width="800" height="540" alt="" loading="lazy" decoding="async"></picture><img class="prototype-stickers" src="{{root}}media/sortafy-prototype-4-stickers.svg" width="429" height="306" alt="" loading="lazy" decoding="async"></span>
           </span>
         </button>
         <div class="prototype-insights" id="prototype-insights-4">
@@ -188,16 +188,19 @@
         </div>
       </li>
     </ul>
-    <div class="case-carousel-controls" aria-label="Prototype controls">
-      <button type="button" data-step="-1" aria-label="Previous prototype">‹</button>
-      <div class="case-carousel-dots"><button type="button" data-slide="0" aria-label="Show prototype 1" aria-current="true"></button>
-<button type="button" data-slide="1" aria-label="Show prototype 2"></button>
-<button type="button" data-slide="2" aria-label="Show prototype 3"></button>
-<button type="button" data-slide="3" aria-label="Show prototype 4"></button></div>
-      <button type="button" data-step="1" aria-label="Next prototype">›</button>
+    <button type="button" class="prototype-arrow" data-step="-1" aria-label="Previous prototype"></button>
+    <button type="button" class="prototype-arrow" data-step="1" aria-label="Next prototype"></button>
+    <div class="case-carousel-dots prototype-pagination" role="group" aria-label="Choose a prototype">
+      <button type="button" data-slide="0" aria-label="Show prototype 1" aria-current="true"></button>
+      <button type="button" data-slide="1" aria-label="Show prototype 2"></button>
+      <button type="button" data-slide="2" aria-label="Show prototype 3"></button>
+      <button type="button" data-slide="3" aria-label="Show prototype 4"></button>
     </div>
   </div>
-  <p class="case-carousel-hint">*Hover or select a card to see more user insights</p>
+  <p class="case-carousel-hint">
+    <span class="prototype-hint-pointer">*Hover to see more user insights</span>
+    <span class="prototype-hint-touch">Tap a card to see more user insights</span>
+  </p>
 </section>
 
 <section class="case-copy-block case-copy-narrow case-copy-detail">

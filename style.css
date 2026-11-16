@@ -405,7 +405,8 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
   aspect-ratio: 2 / 3;
   border-radius: inherit;
 }
-.prototype-front picture { display: block; height: 100%; }
+.prototype-front picture, .prototype-art { display: block; height: 100%; }
+.prototype-front .prototype-stickers { display: none; }
 .prototype-front img { height: 100%; object-fit: cover; }
 .prototype-description { display: none; }
 .prototype-insights {
@@ -429,7 +430,7 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
 @media (hover: hover) and (pointer: fine) {
   .prototype-card:hover + .prototype-insights { visibility: visible; opacity: 1; }
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 809.98px) {
   .prototype-insights-copy { width: 1px; height: 1px; clip-path: inset(50%); }
 }
 
@@ -456,6 +457,84 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
 }
 .case-carousel-dots button[aria-current]::before { background-color: currentColor; }
 .case-carousel-hint { margin-top: var(--space-2); color: var(--muted); font-size: var(--font-small); text-align: center; }
+
+/* Keep the active Sortafy card framed by arrows, with pagination below. */
+.sortafy-carousel { padding: 50px 0 22px; }
+.sortafy-carousel .case-carousel-stage {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 888px) 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 8px;
+  max-width: 992px;
+}
+.sortafy-carousel .case-carousel-track {
+  --card-width: 100%;
+  grid-area: 1 / 2;
+  gap: 0;
+  padding: 0;
+  border-radius: 20px;
+  scrollbar-width: none;
+}
+.prototype-arrow,
+.prototype-pagination button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.prototype-arrow {
+  grid-row: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.prototype-arrow[data-step="-1"] { grid-column: 1; }
+.prototype-arrow[data-step="1"] { grid-column: 3; }
+.prototype-arrow::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background: #bbbbb6;
+  transition: background-color var(--duration) ease;
+}
+.prototype-arrow:hover::before { background: #92928c; }
+.prototype-arrow::after {
+  content: "";
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translateX(-2px) rotate(45deg);
+}
+.prototype-arrow[data-step="-1"]::after { transform: translateX(2px) rotate(-135deg); }
+.prototype-pagination {
+  grid-area: 2 / 2;
+  justify-self: center;
+  gap: 0;
+  padding: 2px 4px;
+  border-radius: 999px;
+  background: #c3c2bd;
+}
+.prototype-pagination button { width: 20px; height: 24px; border-radius: 50%; }
+.prototype-pagination button::before {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  background: #e1e1de;
+}
+.prototype-pagination button[aria-current]::before { background: #fff; }
+.sortafy-carousel .case-carousel-hint { margin-top: 28px; color: #83837d; }
+.prototype-hint-pointer { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .prototype-hint-pointer { display: inline; }
+  .prototype-hint-touch { display: none; }
+}
 
 .related-projects { padding-top: var(--space-6); }
 .related-heading {
@@ -537,20 +616,36 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
   .case-media-analytics .case-media-items { gap: 40px; }
   .case-carousel-track { --card-width: min(32vw, 430px); }
   .case-carousel-card summary img { aspect-ratio: 430 / 308; }
-  .sortafy-carousel .case-carousel-track { --card-width: 100%; max-width: 888px; margin-inline: auto; }
+  .related-grid a { aspect-ratio: 440 / 330; }
+  .related-projects { padding-inline: 0; }
+}
+
+@media (min-width: 810px) {
   .prototype-front {
     display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
     align-items: center;
-    gap: 56px;
-    padding: 32px 48px;
+    gap: clamp(24px, 3vw, 32px);
+    padding: 32px clamp(28px, 4vw, 52px) 52px;
+    min-height: 300px;
     aspect-ratio: 888 / 352;
   }
-  .prototype-front picture { height: auto; }
+  .prototype-front picture, .prototype-art { height: auto; }
   .prototype-front img { height: auto; object-fit: contain; }
+  .prototype-art { position: relative; }
+  .prototype-front .prototype-stickers {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
   .prototype-description {
     display: grid;
-    gap: 24px;
+    gap: clamp(20px, 3vw, 30px);
+    max-width: 300px;
+    margin-bottom: 20px;
     color: #2a2a2a;
     font: 400 0.875rem/1.2 "Plus Jakarta Sans", var(--font-sans);
   }
@@ -573,8 +668,19 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
     font: 400 0.975rem/1.2 "Plus Jakarta Sans", var(--font-sans);
   }
   .prototype-insights-copy h3 { font: 700 1.25rem/1.45 "Space Grotesk", var(--font-sans); }
-  .related-grid a { aspect-ratio: 440 / 330; }
-  .related-projects { padding-inline: 0; }
+}
+
+@media (max-width: 809.98px) {
+  .sortafy-carousel .case-carousel-stage { max-width: 433px; }
+}
+
+@media (max-width: 520px) {
+  .sortafy-carousel { padding-block: 32px 24px; }
+  .sortafy-carousel .case-carousel-stage { max-width: 329px; gap: 12px 8px; }
+  .sortafy-carousel .case-carousel-track { grid-column: 1 / -1; }
+  .prototype-arrow { grid-row: 2; }
+  .prototype-pagination button { width: 24px; }
+  .sortafy-carousel .case-carousel-hint { margin-top: 16px; }
 }
 
 @media (max-width: 809.98px) {
