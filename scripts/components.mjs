@@ -83,12 +83,14 @@ export function page({ site, route, root, meta, canonical, body, pageClass, noin
   ${empty ? '' : `<script src="${root}interactions.js" type="module"></script>`}
 </head>
 <body class="${pageClass}">
-  ${empty ? '<main id="main"></main>' : `<a class="skip-link" href="#main">Skip to content</a>
-  ${navigation(route, root)}
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    ${navigation(route, root)}
+  </header>
   <main id="main" tabindex="-1">
     ${body}
   </main>
-  ${contact}`}
+  ${contact}
 </body>
 </html>
 `;
