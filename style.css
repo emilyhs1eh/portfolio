@@ -339,7 +339,6 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
   aspect-ratio: var(--demo-ratio, 16 / 9);
   background: var(--surface);
 }
-.data-page .case-prototype { --demo-ratio: 2540 / 1440; }
 .pca-page .case-prototype { --demo-ratio: 810 / 402; }
 .links-page .case-prototype { --demo-ratio: 811 / 573; }
 .case-prototype video { display: block; width: 100%; height: 100%; object-fit: contain; }
@@ -353,6 +352,20 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
   height: auto;
   aspect-ratio: var(--demo-ratio);
   margin-inline: auto;
+}
+
+.data-page .case-prototype-panel {
+  --demo-ratio: 2540 / 1440;
+  padding: clamp(24px, 8.2vw, 118px) 0;
+  background: #efefef;
+}
+.data-page .case-prototype-panel video {
+  width: 54%;
+  background: #000;
+  box-shadow: 3px 8px 14px rgb(0 0 0 / 23%);
+}
+@media (max-width: 809.98px) {
+  .data-page .case-prototype-panel video { width: 86%; }
 }
 
 .case-carousel {
