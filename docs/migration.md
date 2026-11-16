@@ -17,7 +17,7 @@
 - [x] Complete all six case studies using the live copy, project imagery, and demo links. Retain the root, About, and case-study routes and add redirects for the old HTML URLs.
 - [x] Keep the unlinked test page and empty photography route reachable. Exclude both from indexing and navigation. Correct the sitemap to include Prudential.
 - [x] Bundle original-resolution Framer images, self-hosted demo MP4s, and IBM Plex font files. Generate the site from local files.
-- [x] Support keyboard access, focus outlines, skip navigation, card insights on pointer and keyboard, and reduced motion. Darken muted copy for readability. Use labeled native video controls and user-initiated playback.
+- [x] Support keyboard access, focus outlines, skip navigation, card insights on pointer and keyboard, and reduced motion. Darken muted copy for readability. Use labeled native video controls and muted autoplay when a demo is in view. Respect the reduced-motion preference.
 
 ## 4. QA and optimization
 
