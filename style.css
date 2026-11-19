@@ -634,6 +634,12 @@ h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
     margin: var(--space-3) auto;
   }
   .case-demo-pair > :is(.case-media, .case-prototype) { width: 100%; margin: 0; }
+  .ainsithe-page .case-demo-pair > .case-media {
+    aspect-ratio: var(--demo-ratio, 16 / 9);
+    min-height: 0;
+    overflow: hidden;
+  }
+  .ainsithe-page .case-demo-pair > .case-media img { height: 100%; object-fit: cover; }
   .taishin-page .case-meta-grid + .case-prototype { --demo-ratio: 1440 / 732; }
   .case-carousel-track { --card-width: min(32vw, 430px); }
   .case-carousel-card summary img { aspect-ratio: 430 / 308; }
