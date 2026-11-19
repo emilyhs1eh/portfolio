@@ -1,45 +1,29 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="About Emily Hsieh, product and UX/UI designer.">
-    <link rel="stylesheet" href="style.css">
-    <title>About - Emily Hsieh</title>
-</head>
-
-<body class="about-page">
-     <nav class="site-nav" aria-label="Primary navigation">
-        <a href="index.html">HOME</a>
-        <a href="#works">WORK</a>
-        <a href="about.html">ABOUT</a>
-        <a href="#contact">CONTACT</a>
-    </nav>
-
-    <main class="about-main">
+<div class="about-main">
         <aside class="about-sticky">
-            <img src="https://framerusercontent.com/images/S0hgxqxl78DetAIC7xHempXewg.jpg?width=3754&amp;height=2816" alt="Emily Hsieh holding a camera in a mirror">
+            <picture>
+                <source type="image/webp" srcset="{{root}}media/about-portrait-1200.webp" width="1200" height="900">
+                <img src="{{root}}media/S0hgxqxl78DetAIC7xHempXewg.jpg" alt="Emily Hsieh holding a camera in a mirror" decoding="async" width="3754" height="2816" loading="eager">
+            </picture>
         </aside>
 
         <section class="about-content" aria-labelledby="about-title">
             <header class="about-heading">
-                <h1 id="about-title">Emily<br>Hsieh</h1>
-                <p>Product &amp; UX/UI Designer</p>
+                <h1 id="about-title">Emily<span class="about-title-break"> </span>Hsieh</h1>
+                <p>product &amp; UX/UI designer</p>
             </header>
 
             <article class="about-card about-bio">
                 <h2>Designing through Reflection</h2>
                 <p>
-                    A designer with an international background, born in San Francisco, raised in Taipei, studied in
+                    A designer with an international background — born in San Francisco, raised in Taipei, studied in
                     Irvine, and now living in New York City. I bring 5+ years of experience in user experience design,
                     user research, and digital product development. My expertise lies in creating human-centered digital
                     experiences across <strong>e-commerce, financial web platforms, AI technology, and digital media</strong>
                     to deliver impactful digital solutions aligned with business strategies.
                 </p>
                 <p>
-                    Passionate about enhancing user engagement and satisfaction through thoughtful design. My journey
-                    from working at top-tier advertising agencies to a fine tea house has honed my ability to approach
+                    Passionate about enhancing user engagement and satisfaction through thoughtful design. My journey —
+                    from working at top-tier advertising agencies to a fine tea house — has honed my ability to approach
                     design challenges with creativity and empathy. I excel in collaborating with cross-functional teams
                     to deliver impactful products.
                 </p>
@@ -53,7 +37,7 @@
                 </p>
 
                 <figure class="about-landscape">
-                    <img src="https://framerusercontent.com/images/M6v6avppB8Nt6WyWOa0OuhxlJQc.jpg?width=3360&amp;height=2240" alt="Sunset over a desert landscape">
+                    <img src="{{root}}media/M6v6avppB8Nt6WyWOa0OuhxlJQc.jpg" alt="Sunset over a desert landscape" decoding="async" width="3360" height="2240" loading="lazy">
                 </figure>
             </article>
 
@@ -71,7 +55,7 @@
                 <div class="about-row">
                     <div>
                         <h3>Product Designer</h3>
-                        <p>AINSI THE</p>
+                        <p>AINSI THÉ TEA HOUSE</p>
                     </div>
                     <span>Apr.2020 - Dec.2022</span>
                 </div>
@@ -79,7 +63,7 @@
                 <div class="about-row">
                     <div>
                         <h3>UX Designer | Account Executive</h3>
-                        <p>DENTSU - contract</p>
+                        <p>DENTSU • contract</p>
                     </div>
                     <span>Oct.2020 - Dec.2020</span>
                 </div>
@@ -121,21 +105,4 @@
                 </div>
             </section>
         </section>
-    </main>
-
-    <footer class="footer" id="contact">
-        <h2>CONTACT</h2>
-
-        <div class="footer-content">
-            <a href="mailto:emily86818@gmail.com">emily86818@gmail.com</a>
-
-            <div class="social-links">
-                <a href="https://emilyhs1eh.github.io/" target="_blank" rel="noopener">GITHUB</a>
-                <a href="https://www.cosmos.so/emilyhs1eh" target="_blank" rel="noopener">COSMOS</a>
-                <a class="connect" href="https://www.linkedin.com/in/emilyhs1eh" target="_blank" rel="noopener">LET'S CONNECT</a>
-            </div>
-        </div>
-    </footer>
-</body>
-
-</html>
+    </div>

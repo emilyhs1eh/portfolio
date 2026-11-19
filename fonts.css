@@ -1,0 +1,10 @@
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 300 700; font-style: italic; font-display: swap; src: url('media/ibm-plex-sans-italic.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 300 700; font-style: normal; font-display: swap; src: url('media/ibm-plex-sans-normal.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Sans Condensed'; font-weight: 400; font-style: normal; font-display: swap; src: url('media/ibm-plex-sans-condensed-normal-400.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 300; font-style: italic; font-display: swap; src: url('media/ibm-plex-serif-italic-300.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 400; font-style: italic; font-display: swap; src: url('media/ibm-plex-serif-italic-400.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 300; font-style: normal; font-display: swap; src: url('media/ibm-plex-serif-normal-300.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 400; font-style: normal; font-display: swap; src: url('media/ibm-plex-serif-normal-400.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 300 700; font-style: normal; font-display: swap; src: url('media/spacegrotesk-latin.woff2') format('woff2'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-weight: 200 800; font-style: normal; font-display: swap; src: url('media/plusjakartasans-latin.woff2') format('woff2'); }
+@font-face { font-family: 'DM Sans'; font-weight: 700; font-style: normal; font-display: swap; src: url('media/dmsans-latin.woff2') format('woff2'); }
