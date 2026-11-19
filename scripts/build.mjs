@@ -65,7 +65,14 @@ await write('.nojekyll', '');
 await write('404.html', `<!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found — Emily Hsieh</title></head>
-<body><main><h1>Page not found</h1><a href="/">Return to Emily Hsieh’s portfolio</a></main></body>
+<body>
+  <main><h1>Page not found</h1><a id="return-home" href="/">Return to Emily Hsieh’s portfolio</a></main>
+  <script>
+    if (location.hostname === 'emilyhs1eh.github.io' && location.pathname.startsWith('/portfolio/')) {
+      document.getElementById('return-home').href = '/portfolio/';
+    }
+  </script>
+</body>
 </html>
 `);
 console.log(`Built ${routes.length} routes in ${output}/`);

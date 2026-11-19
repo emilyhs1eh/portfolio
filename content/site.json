@@ -1,23 +1,23 @@
 {
   "home": {
-    "title": "emilyhsieh ⸺ portfolio",
-    "description": "Emily Hsieh is a product & user experience designer based in New York City, who combines inclusivity, simplicity, and strategic marketing to create digital products that enhance everyday experiences.",
-    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.png"
+    "title": "Emily Hsieh | Product Designer in NYC",
+    "description": "Explore Emily Hsieh’s product design portfolio, with case studies in financial services, AI-powered photo management, e-commerce, and creative coding.",
+    "image": "media/social/home.jpg",
+    "imageAlt": "Emily Hsieh portfolio cover"
   },
   "about": {
-    "title": "emilyhsieh ⸺ about",
-    "description": "emilyhsieh — designer © 2024",
-    "image": "media/q6MbxJBcMhgrFqcXXQz2FxI6SQc.png"
+    "title": "About Emily Hsieh | Product & UX/UI Designer",
+    "description": "Meet Emily Hsieh, a New York City product and UX/UI designer at JPMorganChase. Explore her background, work experience, and Parsons design education.",
+    "image": "media/social/about.jpg",
+    "imageAlt": "Emily Hsieh holding a camera in a black-and-white mirror portrait"
   },
   "gallery/photography": {
-    "title": "emilyhsieh — portfolio",
-    "description": "emilyhsieh — designer © 2024",
-    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.png"
+    "title": "Photography | Emily Hsieh",
+    "description": "The photography gallery page of Emily Hsieh’s portfolio."
   },
   "test": {
-    "title": "AINSI THÉ",
-    "description": "emilyhsieh — designer © 2024",
-    "image": "media/TwprndNVsrgNJH15V8yJCyQb4.png",
+    "title": "Sortafy Prototype Test | Emily Hsieh",
+    "description": "An archived test version of the Sortafy photo management case study.",
     "related": [
       "pca",
       "taishin",
@@ -26,9 +26,9 @@
   },
   "projects": {
     "pca": {
-      "title": "PCA",
-      "description": "emilyhsieh — designer © 2024",
-      "image": "media/f4tvRvmqSovokUwLNelgB0F5M.png",
+      "title": "Prudential Taiwan Website Redesign | Emily Hsieh",
+      "description": "A UX design case study on redesigning Prudential’s Taiwan website for clearer insurance information, better accessibility, and local customer needs.",
+      "image": "media/social/pca.jpg",
       "related": [
         "ainsithe",
         "sortafy",
@@ -48,12 +48,20 @@
         "ainsithe",
         "taishin",
         "sortafy"
+      ],
+      "imageAlt": "Prudential Taiwan insurance website redesign on a desktop display",
+      "tags": [
+        "UX Design",
+        "Insurance",
+        "Accessibility",
+        "Localization",
+        "Design Systems"
       ]
     },
     "sortafy": {
-      "title": "SORTAFY",
-      "description": "emilyhsieh — designer © 2024",
-      "image": "media/m3tyOfB3jYnxQXOATZ4IcrHm38.png",
+      "title": "Sortafy AI Photo Management App | Emily Hsieh",
+      "description": "Explore Sortafy, Emily Hsieh’s Parsons capstone for organizing photos with AI, from user research and usability testing to the SmartSort and AlbumGenius prototypes.",
+      "image": "media/social/sortafy.jpg",
       "related": [
         "pca",
         "taishin",
@@ -69,12 +77,20 @@
         "height": 2157,
         "alt": "Sortafy photo-management app on mobile",
         "relatedMobile": "media/m3tyOfB3jYnxQXOATZ4IcrHm38.png"
-      }
+      },
+      "imageAlt": "Sortafy photo management app shown on a mobile device",
+      "tags": [
+        "Product Design",
+        "AI",
+        "Photo Management",
+        "Mobile App",
+        "Usability Testing"
+      ]
     },
     "taishin": {
-      "title": "Taishin Bank Charity Foundation",
-      "description": "emilyhsieh — designer © 2024",
-      "image": "media/lXG9uDS5tVO6BVfvIrOf0Et3y4.png",
+      "title": "Taishin Charity Voting Redesign | Emily Hsieh",
+      "description": "A UX case study on simplifying online voting for Taishin Bank Charity Foundation’s Power of Love campaign and supporting nonprofit participation in Taiwan.",
+      "image": "media/social/taishin.jpg",
       "related": [
         "ainsithe",
         "sortafy",
@@ -90,12 +106,20 @@
         "height": 1439,
         "alt": "Taishin Bank Charity Foundation site shown on a desktop",
         "relatedMobile": "media/OWUWtPR2WYMBwhYa05s9P2dHY.png"
-      }
+      },
+      "imageAlt": "Taishin Bank Charity Foundation website redesign on a desktop display",
+      "tags": [
+        "UX Design",
+        "Nonprofits",
+        "Online Voting",
+        "Web Design",
+        "Taiwan"
+      ]
     },
     "ainsithe": {
-      "title": "AINSI THÉ",
-      "description": "emilyhsieh — designer © 2024",
-      "image": "media/vA2MiblYD85UKjMb0lg0x8EVrk.png",
+      "title": "AINSI THÉ Tea E-Commerce Design | Emily Hsieh",
+      "description": "A UX design case study on bringing AINSI THÉ’s Taiwanese tea experience online through product discovery, tea brewing guidance, and a redesigned shopping flow.",
+      "image": "media/social/ainsithe.jpg",
       "related": [
         "taishin",
         "sortafy",
@@ -111,12 +135,20 @@
         "height": 1439,
         "alt": "AINSI THÉ online tea shop shown on desktop and mobile",
         "relatedMobile": "media/aNcYSMRLc5ty4NWEyEBzE05GHks.png"
-      }
+      },
+      "imageAlt": "AINSI THÉ tea e-commerce website on desktop and mobile",
+      "tags": [
+        "E-Commerce",
+        "UX Design",
+        "Tea",
+        "Web Design",
+        "Customer Research"
+      ]
     },
     "links": {
-      "title": "Links",
-      "description": "emilyhsieh — designer © 2024",
-      "image": "media/0Tfg2466r0gyRQX5XJiGMT6yCq0.png",
+      "title": "Links: Are.na API Web Design | Emily Hsieh",
+      "description": "Explore Links, an experimental personal website that uses the Are.na API to display a curated collection of images, audio, text, and other media.",
+      "image": "media/social/links.jpg",
       "related": [
         "data",
         "taishin",
@@ -132,12 +164,19 @@
         "height": 1439,
         "alt": "Links collection on overlapping browser windows",
         "relatedMobile": "media/0Tfg2466r0gyRQX5XJiGMT6yCq0.png"
-      }
+      },
+      "imageAlt": "The Links project displayed in overlapping browser windows",
+      "tags": [
+        "Web Design",
+        "Are.na API",
+        "Creative Coding",
+        "Content Curation"
+      ]
     },
     "data": {
-      "title": "Data Visualization",
-      "description": "emilyhsieh — designer © 2024",
-      "image": "media/yJTxCFtknl4iWVdQvtvfb225DY.png",
+      "title": "Frankenstein Data Visualization in D3.js | Emily Hsieh",
+      "description": "A creative coding case study using D3.js and RiTa to visualize country mentions in Mary Shelley’s Frankenstein through an interactive pie chart.",
+      "image": "media/social/data.jpg",
       "related": [
         "links",
         "taishin",
@@ -158,8 +197,17 @@
         "links",
         "taishin",
         "ainsithe"
+      ],
+      "imageAlt": "D3.js pie chart visualizing country mentions in Frankenstein",
+      "tags": [
+        "Data Visualization",
+        "D3.js",
+        "RiTa",
+        "Creative Coding",
+        "Frankenstein"
       ]
     }
   },
-  "icon": "media/x73vmnnSa6SOLayRnKdxe1CXhU.png"
+  "icon": "media/x73vmnnSa6SOLayRnKdxe1CXhU.png",
+  "googleAnalyticsId": "G-C5GV726X61"
 }

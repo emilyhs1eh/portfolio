@@ -21,8 +21,11 @@ The preview defaults to `http://127.0.0.1:4173/`. Build output is written to `di
 
 ## Publish with GitHub Pages
 
-1. Push the migration branch to `emilyhs1eh/portfolio` and review it in a pull request. The Pages workflow builds and tests pull requests. It publishes from `main`.
-2. In the repo, open **Settings → Pages** and select **GitHub Actions** under **Source**. Merge the PR, then verify a successful **Portfolio Pages** workflow run. Open the deployment URL shown in the run and check the home page, About, all six case studies, and the case-study links. Verify several of the legacy `.html` URLs on the deployed host.
+1. The **Portfolio Pages** workflow builds and tests pull requests and publishes from `main`. In **Settings → Pages**, select **GitHub Actions** as the source. Leave the custom domain field empty while Framer serves `www.emilyhs1eh.com`.
+2. Open **Actions → Portfolio Pages** and run the workflow on `main` if a deployment has not already started. Verify HTTPS at the URL shown by the workflow. Check Home, About, all six case studies, both legacy routes, and at least one `.html` alias. The project URL is the staging host for this migration. Its SEO canonicals still point to the public domain and GA4 runs only on that domain.
+
+### Later custom-domain cutover
+
 3. Verify ownership of `emilyhs1eh.com` in your GitHub account's Pages settings with the DNS TXT record GitHub supplies. Record your existing Framer DNS values so you can restore them if needed.
 4. Add `www.emilyhs1eh.com` as the repository’s Pages custom domain. At your DNS provider, replace the existing `www` record with a CNAME pointing to `emilyhs1eh.github.io`. If you also serve the apex, follow GitHub's current apex DNS instructions and verify its redirect to `www`.
 5. When the Pages DNS check passes and the certificate is available, enable **Enforce HTTPS**. On the custom domain, test all routes over HTTPS and check `/sitemap.xml`, `/robots.txt`, canonical links, and social image URLs. Disconnect Framer only after these checks pass. If the custom-domain cutover fails, restore the saved DNS records and verify the Framer site is serving again.

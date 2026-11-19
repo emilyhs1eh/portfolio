@@ -58,10 +58,65 @@ export function relatedProjects(slugs, mobileSlugs, projects, root) {
 </section>`;
 }
 
+const siteName = 'Emily Hsieh Portfolio';
+
+function analyticsTag(measurementId, hostname) {
+  if (!/^G-[A-Z0-9]+$/.test(measurementId ?? '')) return '';
+  return `<script data-analytics>
+    if (location.protocol === 'https:' && location.hostname === ${JSON.stringify(hostname)}) {
+      const measurementId = ${JSON.stringify(measurementId)};
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', measurementId);
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+      document.head.append(script);
+    }
+  </script>`;
+}
+
+function structuredData(site, route, meta, canonical, image) {
+  const origin = canonical.origin;
+  const websiteId = new URL('/#website', origin).href;
+  const profileUrl = new URL('/about/', origin).href;
+  const personId = new URL('#emily-hsieh', profileUrl).href;
+  const person = {
+    '@type': 'Person',
+    '@id': personId,
+    name: 'Emily Hsieh',
+    url: profileUrl,
+    jobTitle: 'Product Designer',
+    image: new URL(site.about.image, origin).href,
+    sameAs: ['https://www.linkedin.com/in/emilyhs1eh'],
+  };
+  const common = { '@context': 'https://schema.org', url: canonical.href, description: meta.description };
+
+  if (route === '') {
+    return { ...common, '@type': 'WebSite', '@id': websiteId, name: siteName, publisher: person };
+  }
+  if (route === 'about') {
+    return { ...common, '@type': 'ProfilePage', name: meta.title, mainEntity: person };
+  }
+  return {
+    ...common,
+    '@type': 'CreativeWork',
+    name: meta.name,
+    image,
+    author: { '@type': 'Person', '@id': personId, name: person.name, url: person.url },
+    isPartOf: { '@id': websiteId },
+    keywords: meta.tags,
+  };
+}
+
 export function page({ site, route, root, meta, canonical, body, pageClass, noindex, empty }) {
   const title = escape(meta.title);
   const description = escape(meta.description);
-  const socialImage = meta.image || site.home.image;
+  const social = meta.image ? meta : site.home;
+  const imageUrl = new URL(social.image, canonical.origin).href;
+  const imageAlt = escape(social.imageAlt);
+  const schema = noindex ? '' : JSON.stringify(structuredData(site, route, meta, canonical, imageUrl)).replaceAll('<', '\\u003c');
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -72,11 +127,22 @@ export function page({ site, route, root, meta, canonical, body, pageClass, noin
   <meta name="robots" content="${noindex ? 'noindex' : 'max-image-preview:large'}">
   <link rel="canonical" href="${canonical}">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="${siteName}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
-  <meta property="og:image" content="${new URL(socialImage, canonical.origin)}">
+  <meta property="og:image" content="${imageUrl}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="${imageAlt}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${description}">
+  <meta name="twitter:image" content="${imageUrl}">
+  <meta name="twitter:image:alt" content="${imageAlt}">
+  ${schema ? `<script type="application/ld+json">${schema}</script>` : ''}
+  ${noindex ? '' : analyticsTag(site.googleAnalyticsId, canonical.hostname)}
   <link rel="icon" href="${root}${site.icon}">
   <link rel="stylesheet" href="${root}fonts.css">
   <link rel="stylesheet" href="${root}style.css">
